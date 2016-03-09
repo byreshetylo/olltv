@@ -1,7 +1,13 @@
-# olltv
+# olltv script
 Easy Python script to get oll.tv channel links for any stream player like VLC
 
 Скрипт котрий робить перегляд каналів з oll.tv дещо зручнішим.
+
+## Запуск
+Скрипту не потрібно передавати параметри, всі налаштування вводяться в файлі
+```bash
+python olltv.py
+```
 
 ## Налаштування скрипта
 Адреса на котрій буде доступний веб інтерфейс:
