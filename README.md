@@ -33,11 +33,15 @@ WLAN MAC адреса вашого телефону:
     'device': 'm2 note',
     # device example: 'm2 note'
 ```
-Серійний номер (наразі не знаю як його дістати окрім як переглянути виходящий трафік телефону, можливо то додаток oll.tv стровює цей серійний номер):
+Серійний номер:
 ```python
     'serial': '12ab34c5-678d-9012-ef34-abcd1234ef56:m2 note.m2note:10'
     # serial example: '12ab34c5-678d-9012-ef34-abcd1234ef56:m2 note.m2note:10'
 }
+```
+Складається серійний номер з наступних параметрів:
+```java
+return ProfileSettings.AndroidId + ":" + Build.PRODUCT + "." + Build.DEVICE + ":" + Build.VERSION.SDK_INT
 ```
 
 Режим налагодження. Якщо все працює, то можете виключити змінивши 1 на 0.
